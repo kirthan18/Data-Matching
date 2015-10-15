@@ -225,7 +225,7 @@ def get_accuracy(product_json_list):
 
 
 def test_data():
-    extract_json_objects('/Users/kirthanaaraghuraman/PycharmProjects/CategoryModule/Files/test_data.txt')
+    extract_json_objects('/Users/kirthanaaraghuraman/Documents/CS799/Data Matching - Implementation/Files/test_data.txt')
     extract_key_values_from_json()
     identify_laptop_case()
 
@@ -237,7 +237,7 @@ def test_data():
                 print(keys)'''
 
 def main():
-    product_list = extract_json_objects('/Users/kirthanaaraghuraman/PycharmProjects/CategoryModule/Files/sample_product_pairs.txt')
+    product_list = extract_json_objects('/Users/kirthanaaraghuraman/Documents/CS799/Data Matching - Implementation/Files/sample_product_pairs.txt')
     product_keys, product_json_list = extract_key_values_from_json(product_list)
     identify_laptop_case(product_json_list)
     get_accuracy(product_json_list)
